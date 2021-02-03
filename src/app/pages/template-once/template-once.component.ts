@@ -65,7 +65,7 @@ export class TemplateOnceComponent implements OnInit, AfterViewInit {
     const inMemoryDelay = (this.inMemoryBackendConfig as InMemoryBackendConfigArgs).delay || 0;
 
     fromEvent(this.appComponent.appContainer, 'click').pipe(
-      filter(() => this.matSnackBarRef && this.doc.getSelection().toString().length === 0),
+      filter(() => this.matSnackBarRef && this.currentSelectionContent.length === 0),
       untilDestroyed(this)
     ).subscribe(() => {
       this.docSelection.empty();

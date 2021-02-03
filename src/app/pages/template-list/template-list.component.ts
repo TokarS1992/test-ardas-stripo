@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { TemplateService } from '@common/services/api/template.service';
 import { NInMemoryData } from '@common/mocks/in-memory-data.models';
 import ITemplate = NInMemoryData.ITemplate;
+import TKeyTemplate = NInMemoryData.TKeyTemplate;
 
 @Component({
   selector: 'stripo-template-list',
@@ -12,7 +13,7 @@ import ITemplate = NInMemoryData.ITemplate;
 })
 export class TemplateListComponent implements OnInit {
   public templates$: Observable<ReadonlyArray<ITemplate>>;
-  public displayedColumns: (keyof ITemplate)[] = ['id', 'name', 'modified'];
+  public displayedColumns: TKeyTemplate[] = ['id', 'name', 'modified'];
 
   constructor(
     private templateService: TemplateService

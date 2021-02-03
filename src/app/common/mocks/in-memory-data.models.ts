@@ -5,4 +5,6 @@ export namespace NInMemoryData {
     template: string;
     modified: number | string | Date;
   }
+
+  export type TKeyTemplate = keyof ITemplate;
 }
