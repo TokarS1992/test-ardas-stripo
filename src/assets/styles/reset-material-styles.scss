@@ -1,0 +1,14 @@
+body {
+  .cdk-global-overlay-wrapper {
+    .cdk-overlay-pane {
+      width: 100%;
+    }
+  }
+
+  .mat-snack-bar-container {
+    margin: 0;
+    width: 100%;
+    max-width: initial;
+    background-color: darkslateblue;
+  }
+}

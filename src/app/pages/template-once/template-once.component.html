@@ -1,0 +1,8 @@
+<div class="template-once-container">
+  <h2>
+    <mat-icon routerLink="/template-list">arrow_back</mat-icon>
+    Template once
+  </h2>
+
+  <div #templateRef [innerHTML]="(template$ | async)?.template | sanitizeHtml"></div>
+</div>

@@ -1,0 +1,21 @@
+.template-once-container {
+  margin-top: 40px;
+
+  h2 {
+    display: flex;
+    align-items: center;
+
+    .mat-icon {
+      cursor: pointer;
+    }
+  }
+
+  ::ng-deep .editable {
+    -webkit-user-modify: read-write;
+    -webkit-line-break: after-white-space;
+    outline: none;
+    padding-bottom: 15px;
+    user-select: text;
+    cursor: text;
+  }
+}

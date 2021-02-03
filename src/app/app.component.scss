@@ -1,0 +1,6 @@
+$containerPad: 30px;
+
+.app-container {
+  padding: $containerPad;
+  height: calc(100% - #{$containerPad * 2});
+}
